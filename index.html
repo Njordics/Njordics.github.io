@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordArt — Color by Word</title>
+  <meta name="description" content="WordArt: find hidden words to earn paint, then color cozy pictures. An Android game by Njordic.">
+  <link rel="icon" href="icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg: #fff6ef; --card: #ffffff; --ink: #2d2640; --muted: #7a7190; --accent: #9b7cf0; --pink: #ff8fab; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #1d1a26; --card: #2a2635; --ink: #f3eefc; --muted: #b3aac6; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Nunito, system-ui, sans-serif; }
+    main { max-width: 640px; margin: 0 auto; padding: 48px 16px; text-align: center; }
+    img { width: 128px; height: 128px; border-radius: 28px; box-shadow: 0 10px 30px rgba(155, 124, 240, .3); }
+    h1 { font-size: 2.4rem; font-weight: 800; margin: 24px 0 4px; }
+    .tag { color: var(--muted); font-size: 1.1rem; margin: 0 0 32px; }
+    .card { background: var(--card); border-radius: 28px; padding: 24px; text-align: left; line-height: 1.6;
+            box-shadow: 0 6px 24px rgba(0, 0, 0, .06); }
+    .links { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 28px; }
+    .links a { text-decoration: none; color: #fff; background: var(--accent); padding: 12px 22px; border-radius: 999px;
+               font-weight: 700; }
+    .links a.alt { background: var(--pink); }
+    footer { color: var(--muted); font-size: .9rem; margin-top: 40px; }
+  </style>
+</head>
+<body>
+<main>
+  <img src="icon.png" alt="WordArt app icon">
+  <h1>WordArt</h1>
+  <p class="tag">Find words. Fill colors. Relax.</p>
+  <div class="card">
+    WordArt is a cozy Android coloring book where every color is earned by solving an endless word search.
+    Each word you find pours paint into a color's bucket — then tap the matching spaces to watch your picture
+    come to life. Themed books, a fresh daily page, trophies, and a gallery to replay and share your art.
+  </div>
+  <div class="links">
+    <a href="https://github.com/Njordics/WordArt-releases/releases/latest">Download for Android</a>
+    <a class="alt" href="https://github.com/Njordics/WordArt-releases/blob/main/PRIVACY.md">Privacy policy</a>
+  </div>
+  <footer>
+    Made by Njordic · Questions? <a href="https://github.com/Njordics/WordArt-releases/issues">Open an issue</a>
+  </footer>
+</main>
+</body>
+</html>
